@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================
+   Base do site (corrige o cinza)
+   ================================ */
+
+html,
+body {
+  height: 100%;
+  background: #000;
+  color: #fff;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ================================
+   Animação premium da logo Starcine
+   ================================ */
+
+@keyframes logoFloat {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    transform: translateY(-8px) scale(1.02);
+  }
+  50% {
+    transform: translateY(-16px) scale(1.04);
+  }
+  75% {
+    transform: translateY(-8px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes logoGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 25px rgba(220, 38, 38, 0.55));
+  }
+  50% {
+    filter: drop-shadow(0 0 60px rgba(220, 38, 38, 0.9));
+  }
+}
+
+.animate-logo {
+  animation:
+    logoFloat 6s ease-in-out infinite,
+    logoGlow 3.5s ease-in-out infinite;
+}
+
+/* ================================
+   Suavização geral
+   ================================ */
+
+html {
+  scroll-behavior: smooth;
+}
