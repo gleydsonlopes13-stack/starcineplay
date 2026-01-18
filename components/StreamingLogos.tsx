@@ -28,15 +28,19 @@ export default function StreamingLogos() {
             </p>
 
             <p className="mt-1 text-lg md:text-xl text-gray-300">
-              Isso mesmo: <span className="text-white font-semibold">R$ 30 por mês</span>.
+              Isso mesmo:{" "}
+              <span className="text-white font-semibold">R$ 30 por mês</span>.
             </p>
 
-            {/* CTA */}
+            {/* CTA WhatsApp */}
             <a
-              href="#pricing"
-              className="inline-block mt-8 bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 shadow-lg"
+              href="https://wa.me/5511970905736?text=Olá,%20queria%20solicitar%20um%20teste%20grátis%20do%20Starcine%20Play"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-8 bg-red-600 hover:bg-red-700 text-white font-extrabold text-lg px-10 py-4 rounded-xl transition-all duration-300 shadow-lg hover:scale-105"
             >
-              PEÇA SEU TESTE GRÁTIS
+              PEÇA SEU TESTE GRÁTIS ✅
+
             </a>
           </div>
 
