@@ -30,6 +30,17 @@ export default function PricingPlans() {
     'Compatível com todos os dispositivos',
   ]
 
+  // ✅ No DIAMANTE vai aparecer só: "Inclui tudo..." + extras premium
+  const diamondFeatures = [
+    'INCLUI TUDO DOS PLANOS ANTERIORES +',
+    '🚀 Suporte 24 horas, 7 dias por semana',
+    '⚡ Prioridade máxima na fila de atendimento',
+    '🎬 Conteúdos novos liberados antes dos outros planos',
+    '🔒 Estabilidade premium (menos quedas, mais fluidez)',
+    '🧠 Atendimento especializado para instalação e ajustes',
+    '🎁 Vantagens exclusivas ao longo do ano (bônus e liberações especiais)',
+  ]
+
   const monthlyPrice = 30
 
   const plans = [
@@ -70,7 +81,7 @@ export default function PricingPlans() {
       originalPrice: monthlyPrice * 12, // 360
       period: 'Assinatura Anual',
       popular: true,
-      features: commonFeatures,
+      features: diamondFeatures, // ✅ agora não repete os itens comuns
       checkout: 'https://pay.cakto.com.br/32zo49q_703592',
     },
   ]
@@ -203,4 +214,3 @@ export default function PricingPlans() {
     </section>
   )
 }
-
