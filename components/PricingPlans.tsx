@@ -24,13 +24,11 @@ export default function PricingPlans() {
     'Assista na Smart TV',
     'Assista no TV Box/Chromecast',
     'Assista no PC e Notebook',
-    'Programação Adultos (Opcional)',
     'Rádios Online',
     'Desenhos 24h',
     'Compatível com todos os dispositivos',
   ]
 
-  // ✅ No DIAMANTE vai aparecer só: "Inclui tudo..." + extras premium
   const diamondFeatures = [
     'INCLUI TUDO DOS PLANOS ANTERIORES +',
     '🚀 Suporte 24 horas, 7 dias por semana',
@@ -81,7 +79,7 @@ export default function PricingPlans() {
       originalPrice: monthlyPrice * 12, // 360
       period: 'Assinatura Anual',
       popular: true,
-      features: diamondFeatures, // ✅ agora não repete os itens comuns
+      features: diamondFeatures,
       checkout: 'https://pay.cakto.com.br/32zo49q_703592',
     },
   ]
