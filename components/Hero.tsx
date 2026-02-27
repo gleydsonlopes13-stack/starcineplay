@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ShoppingCart } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -43,13 +43,15 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
-              <Link
-                href="#planos"
+              <a
+                href="https://wa.me/5511970905736?text=Olá,%20tenho%20dúvidas%20sobre%20o%20Starcine%20Play" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primaryHover text-white px-8 py-4 rounded-xl font-extrabold text-lg transition-all shadow-2xl hover:shadow-primary/40 hover:scale-[1.03] active:scale-[0.99]"
               >
-                ADQUIRA JÁ
-                <ShoppingCart className="w-5 h-5" />
-              </Link>
+                TIRE SUAS DÚVIDAS
+                <MessageCircle className="w-5 h-5" />
+              </a>
 
               <div className="text-sm text-gray-300">
                 ✅ Ativação rápida • ✅ Suporte na instalação
@@ -86,4 +88,3 @@ export default function Hero() {
     </section>
   )
 }
-

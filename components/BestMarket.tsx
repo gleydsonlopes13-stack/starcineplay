@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Lock, Wifi, Monitor, Gem, Play } from 'lucide-react'
+import { Lock, Wifi, Monitor, Gem, MessageCircle } from 'lucide-react'
 
 export default function BestMarket() {
   const features = [
@@ -50,15 +50,15 @@ export default function BestMarket() {
               e estável para você assistir sem complicações.
             </p>
 
-            {/* BOTÃO TESTE (APONTANDO PARA WHATSAPP) */}
+            {/* BOTAO TIRE SUAS DÚVIDAS */}
             <a
-              href="https://wa.me/5511970905736?text=Olá,%20quero%20fazer%20um%20teste%20do%20Starcine%20Play"
+              href="https://wa.me/5511970905736?text=Olá,%20tenho%20dúvidas%20sobre%20o%20Starcine%20Play"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-2xl hover:shadow-primary/50 hover:scale-105"
             >
-              FAÇA UM TESTE GRÁTIS
-              <Play className="w-5 h-5" />
+              TIRE SUAS DÚVIDAS
+              <MessageCircle className="w-5 h-5" />
             </a>
           </div>
 
@@ -86,4 +86,3 @@ export default function BestMarket() {
     </section>
   )
 }
-
