@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import { Instagram } from 'lucide-react'
+import Link from "next/link"
+import { Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -18,8 +18,8 @@ export default function Footer() {
             </Link>
 
             <p className="text-gray-400 text-sm leading-relaxed">
-              Plataforma de streaming completa para filmes, séries, esportes e
-              canais ao vivo — com acesso rápido, qualidade e suporte dedicado.
+              Plataforma de streaming completa para filmes, séries, esportes e canais ao vivo — com acesso rápido,
+              qualidade e suporte dedicado.
             </p>
           </div>
 
@@ -28,7 +28,9 @@ export default function Footer() {
             <h3 className="text-white font-bold mb-4">Contato e Redes</h3>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://instagram.com/starcineplay"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-dark-bg-secondary rounded-lg flex items-center justify-center hover:bg-primary transition-colors"
                 aria-label="Instagram"
               >
@@ -36,7 +38,9 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://wa.me/5511970905736?text=Ol%C3%A1%2C%20quero%20assinar%20o%20Starcine%20Play"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-dark-bg-secondary rounded-lg flex items-center justify-center hover:bg-accent transition-colors"
                 aria-label="WhatsApp"
               >
@@ -69,13 +73,17 @@ export default function Footer() {
                   Planos
                 </Link>
               </li>
+
+              {/* CTA Comercial (WhatsApp) */}
               <li>
-                <Link
-                  href="#teste"
+                <a
+                  href="https://wa.me/5511970905736?text=Ol%C3%A1%2C%20quero%20assinar%20o%20Starcine%20Play"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-primary transition-colors text-sm"
                 >
-                  Teste Grátis
-                </Link>
+                  Assine Agora
+                </a>
               </li>
             </ul>
           </div>
@@ -94,6 +102,3 @@ export default function Footer() {
     </footer>
   )
 }
-
-
-
